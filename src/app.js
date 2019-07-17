@@ -12,6 +12,8 @@ let app = express();
 
 
 let initApp = async function () {
+
+  let config = await Ioc.create('config');
 // view engine setup
   app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'pug');

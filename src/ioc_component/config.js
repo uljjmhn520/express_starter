@@ -1,9 +1,12 @@
-const Config = require("../config");
+const config = require("../config");
 
 
 
 exports = module.exports = function () {
-  return Config;
+
+  console.log('---------------load config---------------');
+  console.log(config);
+  return config;
 };
 
 exports['@singleton'] = true;

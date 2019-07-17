@@ -4,10 +4,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: "develop/node/custom_kakou"
-    container_name: "dev_custom_kakou"
+    image: "develop/node/express_starter"
+    container_name: "dev_express_starter"
     ports:
-      - "0.0.0.0:50006:50006"
+      - "0.0.0.0:50000:3000"
     volumes:
       - app:/app
     env_file:

@@ -7,7 +7,6 @@
     "runtime": "pm2-runtime start pm2.config.js",
     "dae": "pm2 start pm2.config.js",
     "test": "mocha test/*"
-
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -16,6 +15,7 @@
     "electrolyte": "^0.5.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "log4js": "^4.5.1",
     "morgan": "~1.9.1",
     "nickjs": "^0.3.6",
     "pug": "2.0.0-beta11"
