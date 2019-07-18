@@ -16,9 +16,8 @@ module.exports = {
     level: envList.LOGGER_LEVEL || 'debug',
     path: envList.LOGGER_PATH || path.join(__dirname,'..','logs'),
     adapters: {
-
       log4js: {
-        appenders:(envList.LOGGER_LOG4JS_APPENDERS || 'console,log,errorFilter').split(',')
+        category:envList.LOGGER_LOG4JS_CATEGORY || 'default'
       }
     }
   },

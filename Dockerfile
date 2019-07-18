@@ -17,6 +17,14 @@ WORKDIR /app
 
 ENV BIND_PORT=50006
 
+#USER root
+#
+#RUN yarn global add pm2-intercom
+#
+#USER node
+
+RUN pm2 install pm2-intercom
+
 # Commands to update the image
 ##RUN yarn global add nodemon
 
