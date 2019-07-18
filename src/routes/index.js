@@ -1,9 +1,10 @@
-let express = require('express');
+import express from 'express';
+import Ioc from 'electrolyte';
+
 let router = express.Router();
-const Ioc = require('electrolyte');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', async function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 

@@ -14,7 +14,7 @@ module.exports = {
   apps: [
     {
       name: jsonInfo.name,
-      script: "src/bin/www",
+      script: "src/bin/www.es6.js",
       exec_mode: "cluster_mode",
       instances: process.env.PM2_INSTANCE_COUNT || 2,
       log_date_format: "YYYY-MM-DD HH:mm:SS",
@@ -23,6 +23,7 @@ module.exports = {
       pid_file: "logs/" + jsonInfo.name + ".pid",
       watch: false,
       watch_delay: 1000,
+      exec_interpreter:'babel-node',
       ignore_watch: [
         ".git",
         ".idea",

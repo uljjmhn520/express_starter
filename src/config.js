@@ -1,5 +1,5 @@
-const path = require('path');
-const packageInfo = require('../package');
+import path from 'path';
+import packageInfo from '../package';
 
 let envList = process.env;
 

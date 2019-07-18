@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "pm2-runtime start pm2.dev.config.js",
-    "runtime": "pm2-runtime start pm2.config.js",
+    "production": "pm2-runtime start pm2.config.js",
     "dae": "pm2 start pm2.config.js",
+    "start": "babel-node src/bin/www --presets es2015,stage-2",
     "test": "mocha test/*"
   },
   "dependencies": {
@@ -19,5 +20,10 @@
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11",
     "sprintf-js": "^1.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
   }
 }
