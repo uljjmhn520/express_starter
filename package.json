@@ -17,6 +17,7 @@
     "http-errors": "~1.6.3",
     "log4js": "^4.5.1",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "sprintf-js": "^1.1.2"
   }
 }
