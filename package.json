@@ -7,7 +7,7 @@
     "production": "pm2-runtime start pm2.config.js",
     "dae": "pm2 start pm2.config.js",
     "start": "babel-node src/bin/www --presets es2015,stage-2",
-    "test": "mocha --require ./node_modules/babel-core/register.js ./test/**/*.js"
+    "test": "mocha --require ./node_modules/babel-core/register.js ./test/ --recursive"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
