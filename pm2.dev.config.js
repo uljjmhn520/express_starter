@@ -14,7 +14,7 @@ module.exports = {
   apps: [
     {
       name: jsonInfo.name,
-      script: "src/bin/www.es6.js",
+      script: "src/bin/start.es6.js",
       exec_mode: "cluster_mode",
       instances: process.env.PM2_INSTANCE_COUNT || 2,
       log_date_format: "YYYY-MM-DD HH:mm:SS",

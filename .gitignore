@@ -70,3 +70,6 @@ typings/
 src/public/.static
 
 src/temp/
+
+
+/dist

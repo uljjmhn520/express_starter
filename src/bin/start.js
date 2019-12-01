@@ -19,21 +19,6 @@ import Ioc from 'electrolyte';
 
 
   /**
-   * set user for this server
-   */
-  try{
-    if (config.app.group){
-      process.setgid(config.app.group);
-    }
-    if (config.app.user) {
-      process.setuid(config.app.user);
-    }
-  }catch (e) {
-    logger.debug(e.message);
-  }
-
-
-  /**
    * Get port from environment and store in Express.
    */
 
