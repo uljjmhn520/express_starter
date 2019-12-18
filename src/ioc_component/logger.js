@@ -1,5 +1,7 @@
-const log4js = require("log4js");
-const path = require('path');
+import config from "../config";
+
+import log4js from 'log4js';
+import path from 'path';
 
 exports = module.exports = function (config) {
   let configure = {
@@ -50,12 +52,15 @@ exports = module.exports = function (config) {
   //判断一下有没有cate，只在cate里面找
 
   let cate = config.logger.adapters.log4js.category;
+  let logger = null;
   if (typeof configure.categories[cate]) {
-    return log4js.getLogger(cate);
+    logger = log4js.getLogger(cate);
   }else{
-    return log4js.getLogger();
+    logger = log4js.getLogger();
   }
 
+  logger.debug(config);
+  return logger;
 
 };
 

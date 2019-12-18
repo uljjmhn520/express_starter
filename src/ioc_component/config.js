@@ -1,11 +1,6 @@
-const config = require("../config");
-
-
+import config from '../config';
 
 exports = module.exports = function () {
-
-  console.log('---------------load config---------------');
-  console.log(config);
   return config;
 };
 
