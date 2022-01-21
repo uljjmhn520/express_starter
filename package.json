@@ -23,7 +23,7 @@
     "electrolyte": "^0.5.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "log4js": "^4.5.1",
+    "log4js": "^6.4.0",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11",
     "sprintf-js": "^1.1.2"
