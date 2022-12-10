@@ -21,7 +21,7 @@
     "debug": "~2.6.9",
     "dotenv": "^8.0.0",
     "electrolyte": "^0.5.1",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "http-errors": "~1.6.3",
     "log4js": "^4.5.1",
     "morgan": "~1.9.1",
